@@ -13,7 +13,7 @@ class Contact extends React.Component {
                     {name}
                 </h4>            
                 <div className="status">    
-                    {isOnline? <p className="status-online"></p> : <p className="status-offline"></p>}
+                    <div className={isOnline? 'status-online' : 'status-offline'}></div>
                     {isOnline? <p className="status-text">Online</p> : <p className="status-text">Offline</p>}
                 </div> 
             </div>

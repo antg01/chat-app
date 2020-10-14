@@ -3,21 +3,28 @@ import React from 'react';
 // import './App.css';
 import Contact from './components/Contact.js';
 
-const user = {
+const user1 = {
     avatar: 'https://images.unsplash.com/photo-1555952517-2e8e729e0b44?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=900&q=60',
     name: "Clifton Tucker",
-    mail: "clifton.tucker@example.com",
-    bday: "11/2/1985",
-    address: "9324 Spring St",
-    phoneNumber: "(220)-536-0019",
-    password: "harder",
     isOnline: true,
+};
+const user2 = {
+  avatar: 'https://randomuser.me/api/portraits/women/88.jpg',
+  name: "Violet Wheeler",
+  isOnline: false,
+};
+const user3 = {
+  avatar: 'https://randomuser.me/api/portraits/men/38.jpg',
+  name: "Maurice Jennings",
+  isOnline: true,
 };
 
 function App() {
   return (
     <div className="App">
-      <Contact {...user}/>
+      <Contact {...user1}/>
+      <Contact {...user2}/>
+      <Contact {...user3}/>
 
     </div>
   );
