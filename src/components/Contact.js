@@ -2,9 +2,10 @@ import React from 'react';
 import './Contact.css';
 
 
+
 class Contact extends React.Component {
     render() {
-        const {avatar, name, isOnline} = this.props;
+        const {name, avatar, isOnline} = this.props;
       return (
         <div className="Contact">
                 <img className="avatar" src={avatar} alt="user avatar"/>

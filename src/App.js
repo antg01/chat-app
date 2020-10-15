@@ -2,6 +2,7 @@ import React from 'react';
 // import logo from './logo.svg';
 // import './App.css';
 import Contact from './components/Contact.js';
+import ContactList from './components/ContactList.js';
 
 const user1 = {
     avatar: 'https://images.unsplash.com/photo-1555952517-2e8e729e0b44?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=900&q=60',
@@ -25,6 +26,7 @@ function App() {
       <Contact {...user1}/>
       <Contact {...user2}/>
       <Contact {...user3}/>
+      <ContactList />
 
     </div>
   );
