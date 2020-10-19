@@ -11,22 +11,26 @@ class Contact extends React.Component {
         }
     };
     render() {
+
+     const { avatar, name } = this.props
+
       return (
+
         <div className="Contact">
                 <img className="avatar" src={this.props.avatar} alt="user avatar"/>
             <div>
                 <h4 className="name">
                     {this.props.name}
                 </h4>            
-                <div className="status">
-                    <div 
-                        className={this.state.online? 'status-online' : 'status-offline'} 
-                        onClick = {event => {
+                <div className="status" onClick = {event => {
                         const offline = !this.state.online;
                         this.setState({online : offline})
                         }}>
-                        {this.state.online? <p className="status-text">Online</p> : <p className="status-text">Offline</p>}
+                    <div 
+                        className={this.state.online? 'status-online' : 'status-offline'} 
+                        >
                     </div>
+                    {this.state.online? <p className="status-text">Online</p> : <p className="status-text">Offline</p>}
                 </div> 
             </div>
         </div>
